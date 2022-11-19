@@ -1,11 +1,37 @@
 .App {
   text-align: center;
-}
+ }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+
+
+h1 {
+  text-align: center;
+  color: blueviolet;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 350%;
+}
+
+h2 {
+ color: rgb(233, 114, 154);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 200%;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 250%;
+}
+
+/* 
+.button {
+ 
+} 
+ */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

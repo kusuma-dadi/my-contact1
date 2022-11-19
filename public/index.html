@@ -10,34 +10,115 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Dance App</title>
   </head>
+  
   <body>
+<!--     
+  <div class="container">
+   <input type="text" id="filterInput" placeholder="search names..">
+    <ul id="names" class="collection with-header">
+        <li class="collection-header">
+            <h5>Indian Classcial Dance</h5>
+        </li>
+          
+        </li>
+        <li class="collection-item">
+            <a href="#">Bharatnatyam</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Kathak</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Kuchipudi</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Kathakali</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Sattriya</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Odissi</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Manipuri</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Mohiniyattam</a>
+        </li>
+        
+
+        <li class="collection-header">
+            <h5>Indian Folk Dance</h5>
+        </li>
+        <li class="collection-item">
+            <a href="#">Vilasini Natyam</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Bhamakalpam</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Veeranatyam</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Dappu</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Tappeta Gullu</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Lambadi</a>
+        </li>
+        <li class="collection-item">
+            <a href="#">Dhimsa</a>
+        </li> 
+        <li class="collection-item">
+            <a href="#">Kolattam</a>
+        </li> 
+        <li class="collection-item">
+          <a href="#">Nautank</a>
+        </li> 
+        <li class="collection-item">
+          <a href="#">Naga dance</a>
+        </li> 
+        <li class="collection-item">
+          <a href="#">Cheraw Dance</a>
+        </li> 
+      </ul>
+    </div>
+<script>
+    //GET INPUT ELEMENT
+    let filterInput = document.getElementById('filterInput');
+    //ADD EVENT LISTENER
+    filterInput.addEventListener('keyup' , filterNames);
+
+    function filterNames(){
+    //GET VALUE OF INPUT
+    let filterValue = document.getElementById('filterInput').value.toUpperCase();
+   
+    //GET NAMES UL
+    let ul = document.getElementById('names');
+    //GET LI'S FROM UL
+    let  li = ul.querySelectorAll('li.collection-item');
+
+    //LOOP THROUGH COLLECTION-ITEM LI'S
+    for(let i= 0 ; i < li.length; i++){
+      let a = li[i].getElementsByTagName('a')[0];
+
+      //IF MATCHED  
+      if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+          li[i].style.display = '';
+      }else{
+          li[i].style.display = 'none';
+      }
+    }
+}
+</script> -->
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</body>
 </html>
